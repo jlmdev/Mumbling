@@ -11,7 +11,7 @@ namespace Mumbling
             {
                 var character = s[index];
                 var characterString = character.ToString();
-                for (var counter = 0; counter <= index + 1; counter++)
+                for (var counter = 0; counter <= index; counter++)
                 {
                     if (counter == 0)
                     {
@@ -32,6 +32,8 @@ namespace Mumbling
         static void Main(string[] args)
         {
             var result = Accum("abcd");
+            Console.WriteLine($"{result}");
+            Console.ReadLine();
         }
 
 
